@@ -1,0 +1,125 @@
+# ---------------------------------------------------------------------------
+# Secrets & credentials — NEVER commit. See docs/development/environment.md
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.env
+secrets/
+android/key.properties
+**/key.properties
+*.jks
+*.keystore
+
+*.p12
+*.p8
+*.pem
+*.key
+*.cer
+*.mobileprovision
+*.provisionprofile
+service-account*.json
+**/fastlane/report.xml
+# Local, per-developer config overrides (committed examples end in .example)
+config/local*.json
+
+# ---------------------------------------------------------------------------
+# Dart / Flutter
+# ---------------------------------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+**/build/
+/coverage/
+**/doc/api/
+.widget_preview/
+migrate_working_dir/
+app.*.symbols
+app.*.map.json
+# Obfuscation symbol output from release builds
+/debug-info/
+
+# ---------------------------------------------------------------------------
+# Android
+# ---------------------------------------------------------------------------
+/android/app/debug
+/android/app/profile
+/android/app/release
+**/android/.gradle/
+**/android/captures/
+**/android/local.properties
+**/android/gradlew.bat.orig
+**/android/**/GeneratedPluginRegistrant.java
+**/android/.kotlin/
+*.apk
+*.aab
+
+# ---------------------------------------------------------------------------
+# iOS / Xcode
+# ---------------------------------------------------------------------------
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/.generated/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+.swiftpm/
+.build/
+*.ipa
+*.dSYM.zip
+
+# ---------------------------------------------------------------------------
+# IDEs — shared run configurations are committed, personal settings are not
+# ---------------------------------------------------------------------------
+*.iml
+*.ipr
+*.iws
+.idea/*
+!.idea/runConfigurations/
+.vscode/*
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+.fvm/flutter_sdk
+
+# ---------------------------------------------------------------------------
+# OS / misc
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.class
+*.log
+*.pyc
+*.swp
+*.tmp
+.atom/
+.buildlog/
+.svn/
+
+# Local device screenshots for manual testing (not committed)
+/screenshots/

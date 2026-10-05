@@ -1,0 +1,48 @@
+# Normalise line endings for every contributor (Windows, macOS, Linux, AI agents).
+# The repository always stores LF; checkouts use LF too so `dart format` never
+# reports whole-file diffs on Windows.
+* text=auto eol=lf
+
+# Windows-only scripts must keep CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Source & config
+*.dart text eol=lf diff=dart
+*.kt   text eol=lf
+*.kts  text eol=lf
+*.gradle text eol=lf
+*.swift text eol=lf
+*.yaml text eol=lf
+*.yml  text eol=lf
+*.json text eol=lf
+*.arb  text eol=lf
+*.md   text eol=lf
+*.xml  text eol=lf
+*.plist text eol=lf
+*.pbxproj text eol=lf -merge
+gradlew text eol=lf
+
+# Generated Dart code: collapse in diffs, regenerate instead of merging
+*.g.dart       linguist-generated=true -diff
+*.freezed.dart linguist-generated=true -diff
+lib/l10n/generated/** linguist-generated=true -diff
+pubspec.lock   -diff
+
+# Binary files
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.ttf  binary
+*.otf  binary
+*.woff binary
+*.woff2 binary
+*.jar  binary
+*.so   binary
+*.keystore binary
+*.jks  binary
+*.pdf  binary
+*.zip  binary

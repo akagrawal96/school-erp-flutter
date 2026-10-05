@@ -1,0 +1,7 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "erpStaging", "request": "launch", "type": "dart", "program": "lib/main.dart", "args": ["--flavor", "erpStaging"] },
+    { "name": "erpProd (release)", "request": "launch", "type": "dart", "program": "lib/main.dart", "flutterMode": "release", "args": ["--flavor", "erpProd"] }
+  ]
+}

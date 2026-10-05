@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Staging only: the staging server has no HTTPS (docs/api/environments.md).
+  Cleartext is allowed for that host alone; everything else stays HTTPS-only.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">staging.example.test</domain>
+    </domain-config>
+</network-security-config>
